@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Kalnia+Glaze:wght@100..700&display=swap');
+
+body {
+    background-image: url("img/background\ 2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+    font-family: "Bungee Spice";
+}
+
+p {
+    color: brown;
+    
+}
+
+ header table {
+    background-attachment: fixed;
+    background-color: #190c01;
+}
+
+nav{
+    background: linear-gradient(transparent, #803E04);
+    height: 60px;
+}
+div div div div img{
+width: 18rem;
+height: 14rem;
+}
+div div div div div h5{
+    height:3rem ;
+}
+div div div img{
+    height: 50rem;
+    }
+
+header nav a i{
+    color: blue;
+    margin-left: 50%;
+    font-size: xx-large;
+}
+header nav a {
+    color: white;
+    width: 20%;
+    font-size: x-large;
+}
+header nav a h2 {
+    color: black;
+    font-family: Oswald;
+ }
+header nav h4{
+    font-size: xx-large;  
+    font-family: Bungee Spice; 
+}
+ footer{
+    text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000));
+  background: linear-gradient(transparent, #CC6306);
+ }
+footer div div a{
+    font-family:Oswald ;
+}
+
+footer div{
+    font-size: 2rem;
+  line-height: 2;
+  color: white;
+  padding-top: 2rem;
+}
+
+.menu section{
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.menu h2{
+    text-align: center;   
+    font-family: Oswald;
+    color: #fb5b06;    
+    text-decoration: underline;  
+    margin-bottom: 50px;
+}
+ .menu section .card{
+    margin-bottom: 10px;
+ }
+
+.menu section h3{
+    font-family: Oswald;
+    text-align: center;
+    color: #4C2502;
+    text-decoration: overline;
+}
+.menu section h4{
+    font-family: Oswald;
+    color: #120801;
+}
+
+.menu a img{
+    height: 65px;
+    width: 65px;
+}
+
+
+
+    .about {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: (minmax(31rem, 1fr))[auto-fit];
+            grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+        gap: 2rem;
+      }
+      
+      .about .box {
+        text-align: center;
+        padding: 2rem;
+      }
+      
+      .about .box i {
+        height: 7rem;
+        width: 7rem;
+        line-height: 7rem;
+        font-size: 2.5rem;
+        color: black;
+        background: #eacf4f;
+        margin-bottom: 1rem;
+        border-radius: 50%;
+      }
+      
+      .about .box h3 {
+        padding: 1rem 0;
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: black;
+      }
+      
+    .carts{
+        background-image: url("img/background.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        width: 100%;
+        margin-top: 30px;
+        text-align: center;
+        margin: 5px;
+        padding-bottom: 10px;
+        margin-top: 30px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #190C01;
+
+    }
+
+    .carts h2 {
+        text-align: center;
+        font-family: Oswald;
+        color: #803E04;
+        text-decoration: underline;
+
+    }
+    
+    .carts div table{   
+        margin-top: 20px;
+        margin-bottom: 10px;
+        width: 100%;
+        border-collapse: collapse; 
+    }
+    .carts div table td{
+        border: 1px solid #fb5b06;
+        background-color: #ffd8b535;
+        padding: 8px;
+        text-align: center;
+        color: #120801;
+    }
+    .carts div table th{
+        border: 1px solid #CC6306;
+        background-color: #ffbd846f;
+        padding: 8px;
+        text-align: center;
+    }
+    .carts p{
+        text-align: center;
+        font-family: Oswald;
+        font-size: larger;
+        color: #120801;
+    }
+    
+    
+    
+    #checkout {
+        width: 40%;
+        padding: 10px;
+        background-color: #4C2502;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .login div {
+        background-color: #ffffff71;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 5px #fb5c06;
+        width: 50%;
+        text-align: center;
+        margin-top:50px;
+    }
+    
+    .login form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .login input {
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+     .login h2 {
+        color: #FB5B06;
+        background-color: #FFBE84;
+        padding-bottom: 5px;
+        margin-bottom: 25px;
+     }
+    
+    
+    .login button{
+        padding: 7px;
+        background-color: #CC6306;
+        color: #120801;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 30%;
+        font-size: larger;
+        font-family: Oswald;      
+    }
+    
+    
