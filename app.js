@@ -8,6 +8,82 @@ window.onload = function() {
         document.getElementById('time').innerHTML = displayTime;
 }
 
+//-----------------login--------------------------
+
+let loginArray = [];
+
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+event.preventDefault();
+
+let username = document.getElementById('username').value;
+let password = document.getElementById('password').value;
+let email = document.getElementById('email').value;
+
+let loginData = {
+    username: username,
+    password: password,
+    email   : email
+};
+
+loginArray.push(loginData);
+
+console.log(loginArray);
+
+alert('You are logging successfully!!!');  
+    window.location.href = '#home';   
+    setTimeout(function() {
+        alert('Hi ' + username + ', Enjoy Your Time');
+    }, 2000);
+
+});
+
+
+//----------------logout------------------
+function logout() {
+alert("Thank you for join us 🤗");
+window.location.href = 'index.html';   
+}
+
+//-----------------------cart-------------------------
+let cart = [];
+let total = 0;
+
+function addToCart(item) {
+cart.push(item);
+updateCart();
+}
+
+function updateCart() {
+const cartItems = document.getElementById('cart-items');
+const totalElement = document.getElementById('total');
+cartItems.innerHTML = '';
+total = 0;
+
+cart.forEach(cartItem => {
+    const row = document.createElement('tr');
+    const itemName = document.createElement('td');
+    const discount = document.createElement('td');
+    const itemPrice = document.createElement('td');
+
+    itemName.textContent = cartItem.name;
+    discount.textContent = cartItem.discount;
+    itemPrice.textContent = `Rs.${cartItem.netPrice.toFixed(2)}`;
+
+    row.appendChild(itemName);
+    row.appendChild(discount);
+    row.appendChild(itemPrice);
+    cartItems.appendChild(row);
+
+    total += cartItem.netPrice;
+});
+
+totalElement.textContent = total.toFixed(2);
+}
+
+function Checkout(){
+alert("Thank For Your Purchers")
+window.location.href = 'index.html';
+}
 
 
 // ---------------item add----------------
